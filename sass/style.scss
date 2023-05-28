@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// variables
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #2d8bf5;
+$gray-color: #4d4d4d;
+$white-color: #fff;
+$black-color: #000;
+
+// reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// main styling
+html,
+body {
+    font-family: $font-stack;
+    color: $gray-color;
+}
+h1 {font-size: 3rem;}
+h2 {font-size: 2.8rem;}
+h4 {font-size: 1.5rem;}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+a { text-decoration: none;}
+
+// utility class
+.container {
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+.display-1 {
+    font-size: 4rem;
+}
+.display-2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 70px;
+}
+.display-1,
+.display-2 {
+    font-weight: 300;
+    line-height: 1.4;
+}
+.large {
+    font-size: 1.5rem;
+}
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    padding: 12px 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+.btn-dark {
+    background-color: $primary-color;
+    border: none;
+    color: $white-color;
+}
+
+.form {
+    &-group {
+        margin-bottom: 16px;
+    } // end form-group
+    &-control {
+        width: 100%;
+        padding: 7px 12px;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 1px solid $gray-color;
+        color: $gray-color;
+    } // End form-control
+} // End form
+
+// mainheader
+.mainheader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    &-btn {
+        margin-top: 50px;
+    }
+}
+.mainheader-title,
+.mainheader-image {
+    width: 50%;
+}
+.mainheader-title {
+    display: flex;
+}
+.mainheader-image {
+    background-image: url(../img/showcase.jpg);
+    height: 100%;
+}
+
+// join
+.join {
+    padding: 100px 0;
+    &-parr-1 {
+        text-align: center;
+        padding-bottom: 60px;
+    } // end join-parr-1
+    &-form {
+        border: 1px solid $gray-color;
+        padding: 60px;
+        width: 50%;
+        margin: 0 auto;
+    } // end join-form
+    &-h4 {
+        padding-bottom: 40px;
+    } // end join-h4
+} // end join
+
+// footer
+.mainfooter {
+    text-align: center;
+    padding: 30px;
+    &-link {
+        font-size: 13px;
+    } // mainfooter-link
+} // mainfooter
